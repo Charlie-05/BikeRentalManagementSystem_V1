@@ -20,9 +20,20 @@ namespace BikeRentalManagementSystem_V1
             Model = model;
             RentalPrice = rentalPrice;
         }
+        public Bike() { }
 
-        public override string ToString() {
+        public override string ToString()
+        {
             return $"bikeId : {BikeId}, brand: {Brand}, model: {Model}, rentalPrice: {RentalPrice}";
+        }
+
+        public void assignId(string bikeId)
+        {
+            BikeId = bikeId ;
+        }
+
+        public string returnId(Bike bike) {
+            return bike.BikeId ;
         }
     }
 }

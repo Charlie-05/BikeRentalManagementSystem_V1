@@ -1,0 +1,7 @@
+C:\Users\UT01373\Desktop\BikeRentalManagementSystem_V1\BikeRentalManagementSystem_V1\obj\Debug\BikeRentalManagementSystem_V1.csproj.AssemblyReference.cache
+C:\Users\UT01373\Desktop\BikeRentalManagementSystem_V1\BikeRentalManagementSystem_V1\obj\Debug\BikeRentalManagementSystem_V1.csproj.CoreCompileInputs.cache
+C:\Users\UT01373\Desktop\BikeRentalManagementSystem_V1\BikeRentalManagementSystem_V1\bin\Debug\BikeRentalManagementSystem_V1.exe.config
+C:\Users\UT01373\Desktop\BikeRentalManagementSystem_V1\BikeRentalManagementSystem_V1\bin\Debug\BikeRentalManagementSystem_V1.exe
+C:\Users\UT01373\Desktop\BikeRentalManagementSystem_V1\BikeRentalManagementSystem_V1\bin\Debug\BikeRentalManagementSystem_V1.pdb
+C:\Users\UT01373\Desktop\BikeRentalManagementSystem_V1\BikeRentalManagementSystem_V1\obj\Debug\BikeRentalManagementSystem_V1.exe
+C:\Users\UT01373\Desktop\BikeRentalManagementSystem_V1\BikeRentalManagementSystem_V1\obj\Debug\BikeRentalManagementSystem_V1.pdb
