@@ -13,23 +13,44 @@ namespace BikeRentalManagementSystem_V1
         private string Model { get; set; }
         private decimal RentalPrice { get; set; }
 
+       public  static  int TotalBikes {  get; set; }
+
         public Bike(string bikeId, string brand, string model, decimal rentalPrice)
         {
             BikeId = bikeId;
             Brand = brand;
             Model = model;
             RentalPrice = rentalPrice;
+            TotalBikes++;
         }
-        public Bike() { }
+        public Bike() {
+            TotalBikes++;
+        }
 
         public override string ToString()
         {
             return $"bikeId : {BikeId}, brand: {Brand}, model: {Model}, rentalPrice: {RentalPrice}";
         }
 
-        public void assignId(string bikeId)
+        public string assignId(string bikeId)
         {
             BikeId = bikeId ;
+            return BikeId ;
+        }
+        public string assignBrand(string brand)
+        {
+            Brand = brand;
+            return Brand;
+        }
+        public string assignModel(string model)
+        {
+            Model = model;
+            return Model ;
+        }
+        public decimal assignPrice(decimal price)
+        {
+            RentalPrice = price;
+            return RentalPrice ;
         }
 
         public string returnId(Bike bike) {

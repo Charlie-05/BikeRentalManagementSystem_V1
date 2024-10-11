@@ -11,8 +11,19 @@ namespace BikeRentalManagementSystem_V1
         public string FuelTankCapacity { get; set; }    
         public string EngineCapacity { get; set; }
 
-        public PetrolBike() : base()
-        { }
+        public PetrolBike(string bikeId, string brand, string model, decimal rentalPrice, string fuelTankCapacity, string engineCapacity) : base()
+        {
+            base.assignBrand(brand);
+            base.assignId(bikeId);
+            base.assignModel(model);
+            base.assignPrice(rentalPrice);
+            FuelTankCapacity = fuelTankCapacity;
+            EngineCapacity = engineCapacity;
+            TotalBikes++;
+        }
+        public PetrolBike() : base() {
+            TotalBikes++;
+        }
 
         public void DisplayPetrolBikeInfo()
         {
@@ -22,6 +33,10 @@ namespace BikeRentalManagementSystem_V1
         public override string DisplayBikeInfo()
         {
             return $"{base.DisplayBikeInfo()} , FuelTankCapacity : {FuelTankCapacity} ,EngineCapacity : {EngineCapacity}";
+        }
+        public string returnId(PetrolBike pBike)
+        {
+           return  base.returnId(pBike);
         }
     }
 }
