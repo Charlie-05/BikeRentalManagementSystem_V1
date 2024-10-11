@@ -22,8 +22,10 @@ namespace BikeRentalManagementSystem_V1
             string Brand = Console.ReadLine();
             Console.WriteLine("Enter Bike Model");
             string Model = Console.ReadLine();
-            Console.WriteLine("Enter Rental Price");
-            decimal RentalPrice = decimal.Parse(Console.ReadLine());
+           
+           
+            decimal RentalPrice = ValidateRentalPrice();
+
             Console.WriteLine("Enter Bike Type ( E : Electric , P : Petrol)");
             string Type = (Console.ReadLine()).ToLower();
             if(Type == "e")
@@ -127,9 +129,8 @@ namespace BikeRentalManagementSystem_V1
                 string Brand = Console.ReadLine();
                 Console.WriteLine("Enter Bike Model");
                 string Model = Console.ReadLine();
-                Console.WriteLine("Enter Rental Price");
-                decimal RentalPrice = decimal.Parse(Console.ReadLine());
-                
+                decimal RentalPrice = ValidateRentalPrice();
+
                 Bike bike = new Bike(BikeID, Brand, Model, RentalPrice) { };
                 BikeList.Add(bike);
                 Console.WriteLine("Bike Successfully updated...");
@@ -156,6 +157,21 @@ namespace BikeRentalManagementSystem_V1
             {
                 Console.WriteLine("Invalid ID...");
             }
+        }
+
+        public decimal ValidateRentalPrice()
+        { decimal result = 0;   
+            while (true) {
+                Console.WriteLine("Enter Rental Price");
+                decimal price = decimal.Parse(Console.ReadLine());
+                if (price > 0)
+                {
+                    result = price;
+                    break;
+                }           
+                    Console.WriteLine("Invalid...Price must be positive");
+            }
+            return result;
         }
 
     }
